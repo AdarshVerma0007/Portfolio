@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+    
+
+</head>
+<body class="bod">
+    <header>
+        <nav>
+            <h1 class="port">PORTFOLIO</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#cont">Contact</a></li>
+                <li><button>Hire Me</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="projects">
+        <h2>My Projects</h2>
+            <div class="contoner" id="blur">
+            <div class="project"><a href="#" onclick="toggle()">
+                <h4 class="num"> <div class="numb">01</div> 
+                <i class="gg-arrow-bottom-right-o"></i>
+                <p class="fut-1">Web Devlpoment</p>
+                <p class="txt">Total Projects Done:05</p></h4></a></div>
+            
+            <div class="project"><a href="#" onclick="toggle1()">
+                <h4 class="num"><div class="numb">02</div> 
+                <i class="gg-arrow-bottom-right-o"></i>
+                <p class="fut-2">Machine Learning</p>
+                <p class="txt">Total Projects Done:07</p></h4></a>
+            </div>
+            <div class="project"><a href="#" onclick="toggle2()">
+                <h4 class="num"><div class="numb">03</div>
+                <i class="gg-arrow-bottom-right-o"></i>
+                <p class="fut-3">Android Devlopment</p>
+                <p class="txt">Currently Working</p></h4></a>
+            </div>
+            <div class="project"><a href="#" onclick="toggle3()">
+                <h4 class="num"><div class="numb">04</div>
+                <i class="gg-arrow-bottom-right-o"></i>
+                <p class="fut-4">Artificial Intelligence</p>
+                <p class="txt">Total Projects Done:01</p></h4></a>
+            </div></div>
+            <div id="popup">
+                <p class="bot">Web Devlpoment</p>
+                <li>Netflix Clone Website</li>
+                    <li>Shopping Website</li>
+                    <li>Hotel Website</li>
+                    <li>Portfolio Website</li>
+                    <li>Temprature Converter Website</li>
+            <a class="bob1" href="#" onclick="toggle()">Close</a>
+            </div>
+            <div id="popup1">
+                <p class="bot">Machine Learning</p>
+                <li>Credit Card Fraud Predictor</li>
+                <li>Sms Spam Detector</li>
+                <li>Wine Quality Predictor</li>
+                <li>Diabetes Predictor</li>
+                <li>House Price Predictor</li>
+                <li>Cow Health Predictor</li>
+                <li>Customer Churn Predictor</li>
+                 <a class="bob" href="#" onclick="toggle1()">Close</a>
+             </div>
+             <div id="popup2">
+                <p class="bot">Android Devlopment</p>
+               <p> Currently in pregress</p>
+                 <a class="bob" href="#" onclick="toggle2()">Close</a>
+             </div>
+             <div id="popup3">
+                <p class="bot">Artificial Intelligence</p>
+                <li>Build an Automatic Speech Recognition System</li>
+                 <a class="bob" href="#" onclick="toggle3()">Close</a>
+             </div>
+    </section>
+    <footer>
+        <h2 id="cont">Contact Me</h2>
+        
+        <div class="contact-form-container">
+            <div class="abt"><div class="abc"> Lets Work Together </div>
+               <p class="abd"> Confident Student passionate about learning new skills.</p>
+               <p class="abd">Ambitious and driven individual ready and willing to work hard and learn from professionals.</p>
+                <p class="abd">Brings outstanding computer and communication skills</p>
+                <p class="pa4">
+                <a href="https://github.com/AdarshVerma0007"><i class="fa fa-github" style="font-size:20px;color:#00FA9A;"></i></a>
+                    <a href="https://www.instagram.com/ad_arsh_0003/"><i class="fa fa-instagram" style="font-size:20px;color:#00FA9A;"></i></a>
+                    <a href="http://www.linkedin.com/in/adarsh-verma-1a2ba9313"><i class="fa fa-linkedin-square" style="font-size:20px;color:#00FA9A;"></i></a>
+                    <a href=""><i class="fa fa-facebook-square" style="font-size:20px;color:#00FA9A;"></i></a>
+                </p></div>
+            <div class="frm">
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button class="frm1" type="submit">Send Message</button>
+            </form></div>
+        </div>
+        <p class="pika">Devloped By Adarsh</p>
+    </footer>
+    <script type="text/JavaScript">
+        function toggle() {
+            var blur= document.getElementById('blur');
+            blur.classList.toggle('active')
+            var popup= document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+        function toggle1() {
+            var blur= document.getElementById('blur');
+            blur.classList.toggle('active')
+            var popup1= document.getElementById('popup1');
+            popup1.classList.toggle('active')
+        }
+        function toggle2() {
+            var blur= document.getElementById('blur');
+            blur.classList.toggle('active')
+            var popup2= document.getElementById('popup2');
+            popup2.classList.toggle('active')
+        }
+        function toggle3() {
+            var blur= document.getElementById('blur');
+            blur.classList.toggle('active')
+            var popup3= document.getElementById('popup3');
+            popup3.classList.toggle('active')
+        }
+    </script>
+
+</body>
+
+</html>
